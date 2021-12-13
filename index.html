@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/logo.png" type="image/x-icon">
+    <!-- Primary Meta Tags -->
+    <title>MMS Exchange</title>
+    <meta name="title" content="MMS Exchange">
+    <meta name="description" content="Testing Our SWD7">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://metatags.io/">
+    <meta property="og:title" content="MMS Exchange">
+    <meta property="og:description" content="Testing Our SWD7">
+    <meta property="og:image" content="img/logo.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://metatags.io/">
+    <meta property="twitter:title" content="MMS Exchange">
+    <meta property="twitter:description" content="Testing Our SWD7">
+    <meta property="twitter:image" content="img/logo.png">
+
+    <title>Exchange Calculator</title>
+    <link rel="stylesheet" href="vendor/animate_it/animate.min.css">
+    <link rel="stylesheet" href="vendor/fontawesome/css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nightmode.css">
+</head>
+<body>
+    <section class="app">
+        <div class="output">
+            <div class="brand-container">
+                <img src="img/logo.png" class="logo" alt="">
+                <p class="brand">MMEx</p>
+            </div>
+            <div class="result-container">
+                <p class="result">0.00</p>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="calc">
+            <div class="input-container container">
+                <label for="">Input</label>
+                <input type="number" class="input" id="input" placeholder="0.00" min="1" autofocus required>
+            </div>
+            <div class="from-container container">
+                <label for="">From</label>
+                <select id="from" class="from" required>
+                    <option value="">Select Currency</option>
+                </select>
+            </div>
+            <div class="to-container container">
+                <label for="">To</label>
+                <select id="to" class="to" required>
+                    
+                </select>
+            </div>
+            <div class="calculate-container container">
+                <button class="calcBtn">Calculate</button>
+            </div>
+        </div>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>From</th>
+                    <th>To</th>
+                    <th>Result</th>
+                    <th>Trash</th>
+                </tr>
+            </thead>
+            <tbody class="history-list">
+                <tr id="rowSpacer">
+                    <td colspan="5">There Is No Records</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <button class="mode-change" onclick="changeMode()">
+        <i class="fas fa-moon" id="modeIcon"></i>
+    </button>
+    
+
+    <script src="js/data.js"></script>  
+    <script src="js/script.js"></script>
+    
+</body>
+</html>
